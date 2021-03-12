@@ -1,0 +1,126 @@
+/* This css file is included by being imported in index.js */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+}
+
+h1 {
+  font-family: medium-content-sans-serif-font, 'Lucida Grande',
+    'Lucida Sans Unicode', 'Lucida Sans', Geneva, Arial, sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.content {
+  width: 700px;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+  left: auto;
+  right: auto;
+  border: 1px solid grey;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+td {
+  width: 130px;
+  text-align: right;
+}
+
+th {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+td:nth-child(1) {
+  text-align: center;
+}
+
+#company-tickers {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.company-bid-values {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.company-bid-values.header > div {
+  color: #ffffff !important;
+  font-weight: bold;
+  word-break: break-word;
+  font-size: 14px;
+  background-color: #000000;
+  height: 50px;
+}
+
+.company-bid-values > div {
+  width: 100px;
+  color: #ffffff;
+  padding: 10px 10px 0 0;
+  height: 25px;
+}
+.company-bid-values > div:first-child {
+  padding-left: 10px;
+}
+#company-id-eurcad .company-bid-values div,
+#company-id-gbpjpy .company-bid-values div {
+  color: #333333;
+}
+
+#company-id-usdjpy > div div {
+  background-color: #203d6c;
+}
+#company-id-gbpjpy > div div {
+  background-color: #f4f1e9;
+}
+#company-id-gbpeur > div div {
+  background-color: #b1d0b5;
+}
+#company-id-euraud > div div {
+  background-color: #216c2a;
+}
+#company-id-gbpchf > div div {
+  background-color: #4e9455;
+}
+#company-id-eurjpy > div div {
+  background-color: #f4ce30;
+}
+#company-id-eurchf > div div {
+  background-color: #e2381f;
+}
+#company-id-gbpusd > div div {
+  background-color: #002f5b;
+}
+#company-id-gbpcad > div div {
+  background-color: #f5bd36;
+}
+#company-id-usdeur > div div {
+  background-color: #6f9c5a;
+}
+#company-id-gbpaud > div div {
+  background-color: #4f4b40;
+}
+#company-id-eurcad > div div {
+  background-color: #fff5d6;
+}
+
+.documentation {
+  max-width: 900px;
+  margin: auto;
+}
